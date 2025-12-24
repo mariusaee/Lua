@@ -1320,7 +1320,14 @@ p:last-child {
   .hero__cta {
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero__cta .btn {
+    width: 100%;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
   }
 
   .about {
