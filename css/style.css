@@ -542,7 +542,7 @@ small, .small, caption {
 }
 
 .about__text {
-  color: var(--color-text-light);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-8);
 }
 
@@ -787,7 +787,7 @@ small, .small, caption {
 
 .service-card__description {
   font-size: var(--text-sm);
-  color: var(--color-text-light);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-6);
   min-height: 60px;
 }
@@ -1020,7 +1020,7 @@ small, .small, caption {
 }
 
 .contact__text {
-  color: var(--color-text-light);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-8);
 }
 
@@ -1144,7 +1144,7 @@ small, .small, caption {
 .final-cta__text {
   max-width: 500px;
   margin: 0 auto var(--space-10);
-  color: var(--color-text-light);
+  color: var(--color-text-primary);
 }
 
 /* ==========================================================================

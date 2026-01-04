@@ -31,8 +31,8 @@
   /* Semantic Variables */
   --color-text-primary: var(--color-navy);
   --color-text-heading: var(--color-deep-navy);
-  --color-text-light: var(--color-pearl);
-  --color-text-muted: var(--color-steel-blue);
+  --color-text-light: var(--color-steel-blue);
+  --color-text-muted: var(--color-sky-blue);
   --color-background: #FFFFFF;
   --color-background-alt: var(--color-cream);
   --color-background-warm: var(--color-pearl);
