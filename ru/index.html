@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUA Wedding Agency — организация свадеб с индивидуальным подходом. Создаём события, которые отражают вашу историю.">
+  <meta name="keywords" content="свадьба, организация свадьбы, свадебное агентство, wedding planner, свадебный координатор">
+
+  <title>LUA Wedding Agency — Организация свадеб</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LUA Wedding Agency — Организация свадеб">
+  <meta property="og:description" content="Создаём события, которые отражают вашу историю">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lua-wedding.com/ru/">
+</head>
+<body>
+  <!-- ========================================================================
+       Header / Navigation
+       ======================================================================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="logo">LUA</a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#about" class="nav__link">О нас</a></li>
+            <li><a href="#services" class="nav__link">Услуги</a></li>
+            <li><a href="#formats" class="nav__link">Форматы</a></li>
+            <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+            <li><a href="#contact" class="nav__link">Контакты</a></li>
+          </ul>
+
+          <div class="lang-switch">
+            <a href="/" class="lang-switch__link">EN</a>
+            <span style="color: rgba(255,255,255,0.3);">/</span>
+            <a href="/ru/" class="lang-switch__link lang-switch__link--active">RU</a>
+            <span style="color: rgba(255,255,255,0.3);">/</span>
+            <a href="/ua/" class="lang-switch__link">UA</a>
+          </div>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Закрыть меню">&times;</button>
+    <ul class="mobile-menu__list">
+      <li><a href="#about" class="mobile-menu__link">О нас</a></li>
+      <li><a href="#services" class="mobile-menu__link">Услуги</a></li>
+      <li><a href="#formats" class="mobile-menu__link">Форматы</a></li>
+      <li><a href="#reviews" class="mobile-menu__link">Отзывы</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+    </ul>
+    <div class="mobile-menu__lang">
+      <a href="/" class="lang-switch__link">EN</a>
+      <a href="/ru/" class="lang-switch__link lang-switch__link--active">RU</a>
+      <a href="/ua/" class="lang-switch__link">UA</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         Zero Block 1 — Hero
+         ======================================================================== -->
+    <section class="zero-block zero-block--hero hero" id="hero">
+      <div class="hero__background">
+        <!-- Placeholder for optimized background image/video -->
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #3D3D3D 0%, #6B6B6B 100%);"></div>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title">Создаём события, <br>которые отражают <br>вашу историю</h1>
+        <p class="hero__subtitle">
+          Мы берём на себя организацию, чтобы вы могли сосредоточиться на главном —
+          друг на друге и своих близких
+        </p>
+        <div class="hero__cta btn-group">
+          <a href="#contact" class="btn btn--outline-light btn--lg">Записаться на консультацию</a>
+          <a href="#questionnaire" class="btn btn--secondary btn--lg" style="border-color: rgba(255,255,255,0.3); color: #fff;">Заполнить анкету</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__mouse">
+          <div class="scroll-indicator__wheel"></div>
+        </div>
+        <span>Листайте</span>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 2 — About Us
+         ======================================================================== -->
+    <section class="zero-block" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about__image">
+            <!-- Placeholder for about image -->
+            <div style="width: 100%; height: 500px; background: var(--color-background-cream);"></div>
+          </div>
+
+          <div class="about__content">
+            <span class="about__subtitle">О нас</span>
+            <h2 class="about__title">LUA Wedding Agency</h2>
+            <p class="about__text">
+              Мы — команда профессионалов, которая верит, что каждая свадьба уникальна.
+              Наша миссия — создать день, который будет отражать именно вашу историю,
+              ваши ценности и вашу любовь.
+            </p>
+            <p class="about__text">
+              Мы не просто организуем мероприятия — мы создаём атмосферу,
+              в которой вы можете расслабиться и насладиться каждым моментом.
+            </p>
+
+            <div class="about__points">
+              <div class="about__point">
+                <div class="about__point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <span>Индивидуальный подход к каждой паре</span>
+              </div>
+              <div class="about__point">
+                <div class="about__point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <span>Более 150 успешных свадеб</span>
+              </div>
+              <div class="about__point">
+                <div class="about__point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <span>Полное сопровождение от идеи до реализации</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 3 — Gallery (1)
+         ======================================================================== -->
+    <section class="zero-block zero-block--alt" id="gallery-1">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Галерея</span>
+          <h2 class="section-header__title">Наши работы</h2>
+        </div>
+
+        <div class="gallery">
+          <!-- Placeholder gallery items - 8 images in 4x2 grid -->
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E8E6E3;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #DDD9D4;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E0DCD7;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E5E1DC;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E2DEDB;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #D8D4CF;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E6E2DD;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #DBD7D2;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 4 — Principles
+         ======================================================================== -->
+    <section class="zero-block" id="principles">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Наш подход</span>
+          <h2 class="section-header__title">Принципы работы</h2>
+        </div>
+
+        <div class="principles">
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 6v6l4 2"/>
+                <circle cx="12" cy="12" r="10"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Пунктуальность</h4>
+            <p class="principle-card__text">Соблюдаем сроки и тайминг мероприятия</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4.5 12.75l6 6 9-13.5"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Качество</h4>
+            <p class="principle-card__text">Работаем только с проверенными подрядчиками</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Открытость</h4>
+            <p class="principle-card__text">Прозрачная коммуникация на каждом этапе</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Креативность</h4>
+            <p class="principle-card__text">Уникальные решения для каждой пары</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Надёжность</h4>
+            <p class="principle-card__text">Ваше спокойствие — наш приоритет</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Любовь к делу</h4>
+            <p class="principle-card__text">Искренне радуемся вашему счастью</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 5 — Workflow
+         ======================================================================== -->
+    <section class="zero-block zero-block--cream" id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Как мы работаем</span>
+          <h2 class="section-header__title">Этапы подготовки</h2>
+        </div>
+
+        <div class="workflow">
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">01</div>
+            <h4 class="workflow-step__title">Знакомство</h4>
+            <p class="workflow-step__text">Бесплатная консультация и обсуждение ваших идей</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">02</div>
+            <h4 class="workflow-step__title">Концепция</h4>
+            <p class="workflow-step__text">Разработка индивидуальной концепции свадьбы</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">03</div>
+            <h4 class="workflow-step__title">Бюджет</h4>
+            <p class="workflow-step__text">Формирование детальной сметы и плана расходов</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">04</div>
+            <h4 class="workflow-step__title">Подрядчики</h4>
+            <p class="workflow-step__text">Подбор и координация всех специалистов</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">05</div>
+            <h4 class="workflow-step__title">Дизайн</h4>
+            <p class="workflow-step__text">Создание визуальной концепции и декора</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">06</div>
+            <h4 class="workflow-step__title">Логистика</h4>
+            <p class="workflow-step__text">Организация трансфера и размещения гостей</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">07</div>
+            <h4 class="workflow-step__title">Репетиция</h4>
+            <p class="workflow-step__text">Финальная проверка всех деталей</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">08</div>
+            <h4 class="workflow-step__title">Свадьба</h4>
+            <p class="workflow-step__text">Координация мероприятия в день свадьбы</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 6 — Services
+         ======================================================================== -->
+    <section class="zero-block" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Услуги</span>
+          <h2 class="section-header__title">Что мы предлагаем</h2>
+          <p class="section-header__description">
+            Выберите формат сотрудничества, который подходит именно вам
+          </p>
+        </div>
+
+        <div class="services">
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Полная организация</h3>
+            <p class="service-card__description">
+              Полный цикл организации свадьбы от идеи до реализации. Мы берём на себя всё.
+            </p>
+            <div class="service-card__price">
+              от 150 000 ₽ <span>/ проект</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-full">Подробнее</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Частичная организация</h3>
+            <p class="service-card__description">
+              Помощь с отдельными аспектами: подбор площадки, подрядчиков, декора.
+            </p>
+            <div class="service-card__price">
+              от 80 000 ₽ <span>/ проект</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-partial">Подробнее</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Координация дня</h3>
+            <p class="service-card__description">
+              Координация всех подрядчиков и процессов в день свадьбы.
+            </p>
+            <div class="service-card__price">
+              от 45 000 ₽ <span>/ день</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-coordination">Подробнее</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Консультация</h3>
+            <p class="service-card__description">
+              Разовые консультации по любым вопросам организации свадьбы.
+            </p>
+            <div class="service-card__price">
+              от 5 000 ₽ <span>/ час</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-consultation">Подробнее</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Декор и флористика</h3>
+            <p class="service-card__description">
+              Разработка и реализация декоративного оформления вашего торжества.
+            </p>
+            <div class="service-card__price">
+              от 100 000 ₽ <span>/ проект</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-decor">Подробнее</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Destination Wedding</h3>
+            <p class="service-card__description">
+              Организация свадьбы за рубежом или в другом городе России.
+            </p>
+            <div class="service-card__price">
+              от 300 000 ₽ <span>/ проект</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-destination">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 7 — Wedding Formats
+         ======================================================================== -->
+    <section class="zero-block zero-block--alt" id="formats">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Форматы</span>
+          <h2 class="section-header__title">Виды свадеб</h2>
+          <p class="section-header__description">
+            Каждый формат можно адаптировать под ваши пожелания
+          </p>
+        </div>
+
+        <div class="formats">
+          <div class="format-card fade-in">
+            <!-- Placeholder for format image -->
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #C5C0B8;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Классическая</h3>
+              <p class="format-card__text">Традиционная свадьба с церемонией и банкетом</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #B8B3AB;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Камерная</h3>
+              <p class="format-card__text">Уютное торжество для самых близких</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #C0BBB3;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Выездная</h3>
+              <p class="format-card__text">Свадьба на природе или в необычной локации</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #ADA8A0;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Эко-свадьба</h3>
+              <p class="format-card__text">Устойчивый и экологичный подход</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #C3BEB6;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Тематическая</h3>
+              <p class="format-card__text">Свадьба в определённом стиле или эпохе</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #B5B0A8;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Destination</h3>
+              <p class="format-card__text">Свадьба за рубежом или в другом городе</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 8 — Gallery (2)
+         ======================================================================== -->
+    <section class="zero-block" id="gallery-2">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Портфолио</span>
+          <h2 class="section-header__title">Моменты счастья</h2>
+        </div>
+
+        <div class="gallery gallery--6">
+          <!-- 6 gallery items in 3x2 grid -->
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #D5D1CC;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #CAC6C1;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #D0CCC7;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #C7C3BE;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #D3CFCA;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #CCC8C3;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 9 — Reviews
+         ======================================================================== -->
+    <section class="zero-block zero-block--cream" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Отзывы</span>
+          <h2 class="section-header__title">Что говорят наши пары</h2>
+        </div>
+
+        <div class="reviews">
+          <div class="review-card fade-in">
+            <p class="review-card__quote">
+              LUA сделали нашу свадьбу именно такой, какой мы её представляли.
+              Профессионализм на высшем уровне, внимание к каждой детали.
+              Мы могли просто наслаждаться днём.
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar" style="background: #E0DCD7;"></div>
+              <div>
+                <div class="review-card__name">Анна и Михаил</div>
+                <div class="review-card__date">Сентябрь 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card fade-in">
+            <p class="review-card__quote">
+              Благодарим команду LUA за невероятную работу!
+              Все подрядчики были на высоте, тайминг соблюдён идеально.
+              Гости до сих пор вспоминают нашу свадьбу.
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar" style="background: #D8D4CF;"></div>
+              <div>
+                <div class="review-card__name">Елена и Дмитрий</div>
+                <div class="review-card__date">Июль 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card fade-in">
+            <p class="review-card__quote">
+              Организация destination-свадьбы в Италии — это было нечто!
+              LUA справились блестяще, несмотря на все сложности
+              международной логистики.
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar" style="background: #E2DEDB;"></div>
+              <div>
+                <div class="review-card__name">Мария и Александр</div>
+                <div class="review-card__date">Май 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 10 — FAQ
+         ======================================================================== -->
+    <section class="zero-block" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">FAQ</span>
+          <h2 class="section-header__title">Частые вопросы</h2>
+        </div>
+
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>За сколько месяцев до свадьбы нужно обратиться?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Оптимально — за 8-12 месяцев до даты свадьбы. Это даёт достаточно времени
+                для тщательной подготовки и бронирования лучших подрядчиков.
+                Однако мы работаем и с более сжатыми сроками.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Что входит в стоимость полной организации?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Полная организация включает: разработку концепции, подбор и координацию всех подрядчиков,
+                формирование бюджета, управление таймингом, решение всех организационных вопросов
+                и координацию в день свадьбы.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Можно ли организовать свадьбу за рубежом?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Да, мы организуем destination-свадьбы в Италии, Франции, Грузии, Черногории и других странах.
+                У нас есть проверенные партнёры в популярных свадебных направлениях.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Как происходит формирование бюджета?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                После первой встречи мы составляем детальную смету, учитывая все ваши пожелания.
+                Бюджет полностью прозрачен — вы видите каждую статью расходов.
+                Мы помогаем оптимизировать затраты без потери качества.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Работаете ли вы с определённым стилем свадьб?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Нет, мы не ограничиваем себя одним стилем. Каждая свадьба уникальна
+                и отражает индивидуальность пары. Мы работаем с классическими, современными,
+                тематическими и любыми другими форматами.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Сколько свадеб вы ведёте одновременно?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Мы намеренно ограничиваем количество проектов, чтобы уделять максимум внимания каждой паре.
+                Обычно мы работаем не более чем над 3-4 свадьбами одновременно.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 11 — Contact
+         ======================================================================== -->
+    <section class="zero-block zero-block--alt" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__info">
+            <h2 class="contact__title">Свяжитесь с нами</h2>
+            <p class="contact__text">
+              Расскажите о вашей свадьбе, и мы свяжемся с вами в течение 24 часов,
+              чтобы назначить бесплатную консультацию.
+            </p>
+
+            <div class="contact__details">
+              <div class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <span>hello@lua-wedding.com</span>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                </div>
+                <span>+7 (999) 123-45-67</span>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <span>Москва, Россия</span>
+              </div>
+            </div>
+
+            <div class="contact__social">
+              <a href="#" class="contact__social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="18" cy="6" r="1"/>
+                </svg>
+              </a>
+              <a href="#" class="contact__social-link" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                </svg>
+              </a>
+              <a href="#" class="contact__social-link" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" class="form__input" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" class="form__input" required>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <input type="email" id="email" name="email" class="form__input" required>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="date">Предполагаемая дата свадьбы</label>
+              <input type="text" id="date" name="date" class="form__input" placeholder="Месяц / Год">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">Расскажите о вашей свадьбе</label>
+              <textarea id="message" name="message" class="form__textarea" placeholder="Формат, количество гостей, пожелания..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 12 — Final CTA
+         ======================================================================== -->
+    <section class="zero-block final-cta" id="questionnaire">
+      <div class="container">
+        <h2 class="final-cta__title">Готовы начать?</h2>
+        <p class="final-cta__text">
+          Заполните короткую анкету, и мы подготовим для вас индивидуальное предложение
+        </p>
+        <a href="#" class="btn btn--primary btn--lg" data-modal="questionnaire">Заполнить анкету</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">LUA</div>
+          <p class="footer__description">
+            Создаём свадьбы, которые отражают вашу уникальную историю любви
+          </p>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="#about" class="footer__link">О нас</a></li>
+            <li><a href="#services" class="footer__link">Услуги</a></li>
+            <li><a href="#formats" class="footer__link">Форматы</a></li>
+            <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Услуги</h4>
+          <ul class="footer__links">
+            <li><a href="#services" class="footer__link">Полная организация</a></li>
+            <li><a href="#services" class="footer__link">Координация дня</a></li>
+            <li><a href="#services" class="footer__link">Декор</a></li>
+            <li><a href="#services" class="footer__link">Консультация</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Контакты</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@lua-wedding.com" class="footer__link">hello@lua-wedding.com</a></li>
+            <li><a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a></li>
+            <li><span class="footer__link">Москва, Россия</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 LUA Wedding Agency. Все права защищены.</p>
+        <div class="footer__legal">
+          <a href="/ru/privacy" class="footer__legal-link">Политика конфиденциальности</a>
+          <div class="lang-switch" style="margin-left: 24px;">
+            <a href="/" class="lang-switch__link" style="color: rgba(255,255,255,0.4);">EN</a>
+            <span style="color: rgba(255,255,255,0.3);">/</span>
+            <a href="/ru/" class="lang-switch__link lang-switch__link--active" style="color: rgba(255,255,255,0.6);">RU</a>
+            <span style="color: rgba(255,255,255,0.3);">/</span>
+            <a href="/ua/" class="lang-switch__link" style="color: rgba(255,255,255,0.4);">UA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Modals
+       ======================================================================== -->
+  <!-- Service Modal Template -->
+  <div class="modal" id="modal-service-full">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__content">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <h3 class="modal__title">Полная организация свадьбы</h3>
+      <p>
+        Комплексная услуга, которая включает все этапы подготовки и проведения вашей свадьбы:
+      </p>
+      <ul style="margin: 16px 0; padding-left: 20px; list-style: disc; color: var(--color-text-light);">
+        <li>Разработка концепции и стиля</li>
+        <li>Подбор и бронирование площадки</li>
+        <li>Формирование и контроль бюджета</li>
+        <li>Подбор всех подрядчиков</li>
+        <li>Дизайн и декор</li>
+        <li>Координация в день свадьбы</li>
+      </ul>
+      <a href="#contact" class="btn btn--primary" data-close-modal>Записаться на консультацию</a>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose">&times;</button>
+    <img src="" alt="" class="lightbox__image" id="lightboxImage">
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

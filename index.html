@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUA Wedding Agency — personalized wedding planning. We create events that reflect your unique story.">
+  <meta name="keywords" content="wedding, wedding planning, wedding agency, wedding planner, wedding coordinator">
+
+  <title>LUA Wedding Agency — Wedding Planning</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LUA Wedding Agency — Wedding Planning">
+  <meta property="og:description" content="We create events that reflect your unique story">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lua-wedding.com">
+</head>
+<body>
+  <!-- ========================================================================
+       Header / Navigation
+       ======================================================================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="logo">LUA</a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#formats" class="nav__link">Formats</a></li>
+            <li><a href="#reviews" class="nav__link">Reviews</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+
+          <div class="lang-switch">
+            <a href="/" class="lang-switch__link lang-switch__link--active">EN</a>
+            <span style="color: rgba(255,255,255,0.3);">/</span>
+            <a href="/ru/" class="lang-switch__link">RU</a>
+            <span style="color: rgba(255,255,255,0.3);">/</span>
+            <a href="/ua/" class="lang-switch__link">UA</a>
+          </div>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+    <ul class="mobile-menu__list">
+      <li><a href="#about" class="mobile-menu__link">About</a></li>
+      <li><a href="#services" class="mobile-menu__link">Services</a></li>
+      <li><a href="#formats" class="mobile-menu__link">Formats</a></li>
+      <li><a href="#reviews" class="mobile-menu__link">Reviews</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__lang">
+      <a href="/" class="lang-switch__link lang-switch__link--active">EN</a>
+      <a href="/ru/" class="lang-switch__link">RU</a>
+      <a href="/ua/" class="lang-switch__link">UA</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         Zero Block 1 — Hero
+         ======================================================================== -->
+    <section class="zero-block zero-block--hero hero" id="hero">
+      <div class="hero__background">
+        <!-- Placeholder for optimized background image/video -->
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #3D3D3D 0%, #6B6B6B 100%);"></div>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title">Creating events <br>that reflect <br>your story</h1>
+        <p class="hero__subtitle">
+          We handle the planning so you can focus on what matters most —
+          each other and your loved ones
+        </p>
+        <div class="hero__cta btn-group">
+          <a href="#contact" class="btn btn--outline-light btn--lg">Book a consultation</a>
+          <a href="#questionnaire" class="btn btn--secondary btn--lg" style="border-color: rgba(255,255,255,0.3); color: #fff;">Fill out questionnaire</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__mouse">
+          <div class="scroll-indicator__wheel"></div>
+        </div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 2 — About Us
+         ======================================================================== -->
+    <section class="zero-block" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about__image">
+            <!-- Placeholder for about image -->
+            <div style="width: 100%; height: 500px; background: var(--color-background-cream);"></div>
+          </div>
+
+          <div class="about__content">
+            <span class="about__subtitle">About us</span>
+            <h2 class="about__title">LUA Wedding Agency</h2>
+            <p class="about__text">
+              We are a team of professionals who believe that every wedding is unique.
+              Our mission is to create a day that reflects your story,
+              your values, and your love.
+            </p>
+            <p class="about__text">
+              We don't just organize events — we create an atmosphere
+              where you can relax and enjoy every moment.
+            </p>
+
+            <div class="about__points">
+              <div class="about__point">
+                <div class="about__point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <span>Personalized approach for every couple</span>
+              </div>
+              <div class="about__point">
+                <div class="about__point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <span>Over 150 successful weddings</span>
+              </div>
+              <div class="about__point">
+                <div class="about__point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <span>Full support from concept to execution</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 3 — Gallery (1)
+         ======================================================================== -->
+    <section class="zero-block zero-block--alt" id="gallery-1">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Gallery</span>
+          <h2 class="section-header__title">Our Work</h2>
+        </div>
+
+        <div class="gallery">
+          <!-- Placeholder gallery items - 8 images in 4x2 grid -->
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E8E6E3;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #DDD9D4;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E0DCD7;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E5E1DC;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E2DEDB;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #D8D4CF;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #E6E2DD;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery1">
+            <div style="width: 100%; height: 100%; background: #DBD7D2;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 4 — Principles
+         ======================================================================== -->
+    <section class="zero-block" id="principles">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Our approach</span>
+          <h2 class="section-header__title">Working Principles</h2>
+        </div>
+
+        <div class="principles">
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 6v6l4 2"/>
+                <circle cx="12" cy="12" r="10"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Punctuality</h4>
+            <p class="principle-card__text">We respect timelines and event schedules</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4.5 12.75l6 6 9-13.5"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Quality</h4>
+            <p class="principle-card__text">We work only with trusted vendors</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Transparency</h4>
+            <p class="principle-card__text">Clear communication at every stage</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Creativity</h4>
+            <p class="principle-card__text">Unique solutions for every couple</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Reliability</h4>
+            <p class="principle-card__text">Your peace of mind is our priority</p>
+          </div>
+
+          <div class="principle-card fade-in">
+            <div class="principle-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <h4 class="principle-card__title">Passion</h4>
+            <p class="principle-card__text">We genuinely celebrate your happiness</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 5 — Workflow
+         ======================================================================== -->
+    <section class="zero-block zero-block--cream" id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">How we work</span>
+          <h2 class="section-header__title">Planning Stages</h2>
+        </div>
+
+        <div class="workflow">
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">01</div>
+            <h4 class="workflow-step__title">Introduction</h4>
+            <p class="workflow-step__text">Free consultation to discuss your ideas</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">02</div>
+            <h4 class="workflow-step__title">Concept</h4>
+            <p class="workflow-step__text">Development of your wedding concept</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">03</div>
+            <h4 class="workflow-step__title">Budget</h4>
+            <p class="workflow-step__text">Detailed budget planning and management</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">04</div>
+            <h4 class="workflow-step__title">Vendors</h4>
+            <p class="workflow-step__text">Selection and coordination of all vendors</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">05</div>
+            <h4 class="workflow-step__title">Design</h4>
+            <p class="workflow-step__text">Creating visual concept and decor</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">06</div>
+            <h4 class="workflow-step__title">Logistics</h4>
+            <p class="workflow-step__text">Guest transportation and accommodation</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">07</div>
+            <h4 class="workflow-step__title">Rehearsal</h4>
+            <p class="workflow-step__text">Final check of all details</p>
+          </div>
+
+          <div class="workflow-step fade-in">
+            <div class="workflow-step__number">08</div>
+            <h4 class="workflow-step__title">Wedding Day</h4>
+            <p class="workflow-step__text">On-site coordination on your big day</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 6 — Services
+         ======================================================================== -->
+    <section class="zero-block" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Services</span>
+          <h2 class="section-header__title">What We Offer</h2>
+          <p class="section-header__description">
+            Choose the collaboration format that works best for you
+          </p>
+        </div>
+
+        <div class="services">
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Full Planning</h3>
+            <p class="service-card__description">
+              Complete wedding planning from concept to execution. We handle everything.
+            </p>
+            <div class="service-card__price">
+              from $2,000 <span>/ project</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-full">Learn more</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Partial Planning</h3>
+            <p class="service-card__description">
+              Assistance with specific aspects: venue, vendors, decor selection.
+            </p>
+            <div class="service-card__price">
+              from $1,000 <span>/ project</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-partial">Learn more</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Day-of Coordination</h3>
+            <p class="service-card__description">
+              Coordination of all vendors and processes on your wedding day.
+            </p>
+            <div class="service-card__price">
+              from $600 <span>/ day</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-coordination">Learn more</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Consultation</h3>
+            <p class="service-card__description">
+              One-time consultations on any wedding planning questions.
+            </p>
+            <div class="service-card__price">
+              from $70 <span>/ hour</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-consultation">Learn more</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Decor & Floristry</h3>
+            <p class="service-card__description">
+              Design and implementation of decorative elements for your celebration.
+            </p>
+            <div class="service-card__price">
+              from $1,500 <span>/ project</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-decor">Learn more</button>
+          </div>
+
+          <div class="service-card fade-in">
+            <h3 class="service-card__title">Destination Wedding</h3>
+            <p class="service-card__description">
+              Wedding planning abroad or in another city.
+            </p>
+            <div class="service-card__price">
+              from $4,000 <span>/ project</span>
+            </div>
+            <button class="btn btn--secondary" data-modal="service-destination">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 7 — Wedding Formats
+         ======================================================================== -->
+    <section class="zero-block zero-block--alt" id="formats">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Formats</span>
+          <h2 class="section-header__title">Wedding Styles</h2>
+          <p class="section-header__description">
+            Each format can be customized to your preferences
+          </p>
+        </div>
+
+        <div class="formats">
+          <div class="format-card fade-in">
+            <!-- Placeholder for format image -->
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #C5C0B8;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Classic</h3>
+              <p class="format-card__text">Traditional wedding with ceremony and reception</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #B8B3AB;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Intimate</h3>
+              <p class="format-card__text">Cozy celebration for your closest ones</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #C0BBB3;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Outdoor</h3>
+              <p class="format-card__text">Wedding in nature or unique location</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #ADA8A0;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Eco-friendly</h3>
+              <p class="format-card__text">Sustainable and environmentally conscious approach</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #C3BEB6;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Themed</h3>
+              <p class="format-card__text">Wedding in a specific style or era</p>
+            </div>
+          </div>
+
+          <div class="format-card fade-in">
+            <div class="format-card__image" style="width: 100%; height: 100%; background: #B5B0A8;"></div>
+            <div class="format-card__overlay"></div>
+            <div class="format-card__content">
+              <h3 class="format-card__title">Destination</h3>
+              <p class="format-card__text">Wedding abroad or in another city</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 8 — Gallery (2)
+         ======================================================================== -->
+    <section class="zero-block" id="gallery-2">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Portfolio</span>
+          <h2 class="section-header__title">Moments of Happiness</h2>
+        </div>
+
+        <div class="gallery gallery--6">
+          <!-- 6 gallery items in 3x2 grid -->
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #D5D1CC;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #CAC6C1;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #D0CCC7;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #C7C3BE;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #D3CFCA;"></div>
+          </div>
+          <div class="gallery__item" data-lightbox="gallery2">
+            <div style="width: 100%; height: 100%; background: #CCC8C3;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 9 — Reviews
+         ======================================================================== -->
+    <section class="zero-block zero-block--cream" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Reviews</span>
+          <h2 class="section-header__title">What Our Couples Say</h2>
+        </div>
+
+        <div class="reviews">
+          <div class="review-card fade-in">
+            <p class="review-card__quote">
+              LUA made our wedding exactly what we had envisioned.
+              Top-level professionalism, attention to every detail.
+              We could just enjoy the day.
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar" style="background: #E0DCD7;"></div>
+              <div>
+                <div class="review-card__name">Anna & Michael</div>
+                <div class="review-card__date">September 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card fade-in">
+            <p class="review-card__quote">
+              Thank you LUA team for the incredible work!
+              All vendors were excellent, timing was perfect.
+              Our guests still talk about our wedding.
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar" style="background: #D8D4CF;"></div>
+              <div>
+                <div class="review-card__name">Elena & David</div>
+                <div class="review-card__date">July 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card fade-in">
+            <p class="review-card__quote">
+              Organizing a destination wedding in Italy was something else!
+              LUA handled it brilliantly despite all the challenges
+              of international logistics.
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar" style="background: #E2DEDB;"></div>
+              <div>
+                <div class="review-card__name">Maria & Alexander</div>
+                <div class="review-card__date">May 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 10 — FAQ
+         ======================================================================== -->
+    <section class="zero-block" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">FAQ</span>
+          <h2 class="section-header__title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>How far in advance should I book?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Ideally, 8-12 months before your wedding date. This gives enough time
+                for thorough preparation and booking the best vendors.
+                However, we also work with shorter timelines.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>What's included in full planning?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Full planning includes: concept development, selection and coordination of all vendors,
+                budget management, timeline management, handling all organizational matters,
+                and day-of coordination.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Do you plan destination weddings?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                Yes, we organize destination weddings in Italy, France, Georgia, Montenegro and other countries.
+                We have trusted partners in popular wedding destinations.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>How does budget planning work?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                After the first meeting, we create a detailed budget considering all your wishes.
+                The budget is completely transparent — you see every expense item.
+                We help optimize costs without sacrificing quality.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>Do you work with a specific wedding style?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                No, we don't limit ourselves to one style. Every wedding is unique
+                and reflects the couple's individuality. We work with classic, modern,
+                themed, and any other formats.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question">
+              <span>How many weddings do you handle at once?</span>
+              <div class="faq-item__icon"></div>
+            </button>
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                We intentionally limit our number of projects to give maximum attention to each couple.
+                Usually, we work on no more than 3-4 weddings simultaneously.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 11 — Contact
+         ======================================================================== -->
+    <section class="zero-block zero-block--alt" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__info">
+            <h2 class="contact__title">Get in Touch</h2>
+            <p class="contact__text">
+              Tell us about your wedding, and we'll contact you within 24 hours
+              to schedule a free consultation.
+            </p>
+
+            <div class="contact__details">
+              <div class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <span>hello@lua-wedding.com</span>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                </div>
+                <span>+7 (999) 123-45-67</span>
+              </div>
+              <div class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <span>Moscow, Russia</span>
+              </div>
+            </div>
+
+            <div class="contact__social">
+              <a href="#" class="contact__social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="2" width="20" height="20" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="18" cy="6" r="1"/>
+                </svg>
+              </a>
+              <a href="#" class="contact__social-link" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                </svg>
+              </a>
+              <a href="#" class="contact__social-link" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Your name</label>
+                <input type="text" id="name" name="name" class="form__input" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" class="form__input" required>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <input type="email" id="email" name="email" class="form__input" required>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="date">Tentative wedding date</label>
+              <input type="text" id="date" name="date" class="form__input" placeholder="Month / Year">
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">Tell us about your wedding</label>
+              <textarea id="message" name="message" class="form__textarea" placeholder="Format, number of guests, preferences..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__submit">Send inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Zero Block 12 — Final CTA
+         ======================================================================== -->
+    <section class="zero-block final-cta" id="questionnaire">
+      <div class="container">
+        <h2 class="final-cta__title">Ready to Begin?</h2>
+        <p class="final-cta__text">
+          Fill out a short questionnaire, and we'll prepare a personalized proposal for you
+        </p>
+        <a href="#" class="btn btn--primary btn--lg" data-modal="questionnaire">Fill out questionnaire</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">LUA</div>
+          <p class="footer__description">
+            Creating weddings that reflect your unique love story
+          </p>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="#services" class="footer__link">Services</a></li>
+            <li><a href="#formats" class="footer__link">Formats</a></li>
+            <li><a href="#reviews" class="footer__link">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="#services" class="footer__link">Full Planning</a></li>
+            <li><a href="#services" class="footer__link">Day-of Coordination</a></li>
+            <li><a href="#services" class="footer__link">Decor</a></li>
+            <li><a href="#services" class="footer__link">Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@lua-wedding.com" class="footer__link">hello@lua-wedding.com</a></li>
+            <li><a href="tel:+79991234567" class="footer__link">+7 (999) 123-45-67</a></li>
+            <li><span class="footer__link">Moscow, Russia</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 LUA Wedding Agency. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="/privacy" class="footer__legal-link">Privacy Policy</a>
+          <div class="lang-switch" style="margin-left: 24px;">
+            <a href="/" class="lang-switch__link lang-switch__link--active" style="color: rgba(255,255,255,0.6);">EN</a>
+            <span style="color: rgba(255,255,255,0.3);">/</span>
+            <a href="/ru/" class="lang-switch__link" style="color: rgba(255,255,255,0.4);">RU</a>
+            <span style="color: rgba(255,255,255,0.3);">/</span>
+            <a href="/ua/" class="lang-switch__link" style="color: rgba(255,255,255,0.4);">UA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Modals
+       ======================================================================== -->
+  <!-- Service Modal Template -->
+  <div class="modal" id="modal-service-full">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__content">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <h3 class="modal__title">Full Wedding Planning</h3>
+      <p>
+        Comprehensive service that includes all stages of wedding preparation and execution:
+      </p>
+      <ul style="margin: 16px 0; padding-left: 20px; list-style: disc; color: var(--color-text-light);">
+        <li>Concept and style development</li>
+        <li>Venue selection and booking</li>
+        <li>Budget creation and management</li>
+        <li>Vendor selection</li>
+        <li>Design and decor</li>
+        <li>Day-of coordination</li>
+      </ul>
+      <a href="#contact" class="btn btn--primary" data-close-modal>Book a consultation</a>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose">&times;</button>
+    <img src="" alt="" class="lightbox__image" id="lightboxImage">
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
