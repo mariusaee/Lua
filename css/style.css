@@ -1508,18 +1508,112 @@ small, .small, caption {
    Dark Mode Specific Adjustments
    ========================================================================== */
 @media (prefers-color-scheme: dark) {
-  /* Header - Dark scrolled state */
+  /* -------------------------------------------------------------------------
+     Header & Navigation
+     ------------------------------------------------------------------------- */
+  .header {
+    background-color: transparent;
+  }
+
   .header--scrolled {
     background-color: rgba(4, 23, 47, 0.95);
+    backdrop-filter: blur(10px);
   }
 
-  /* Footer - Lighter in dark mode */
-  .footer {
-    background-color: #253449;
-    border-top: 1px solid var(--color-border);
+  .nav__link {
+    color: #FFFFFF;
   }
 
-  /* Service & Review Cards - Dark background with border */
+  .nav__link:hover {
+    color: #E1A81B;
+  }
+
+  .lang-switch__link {
+    color: #C9DCED;
+  }
+
+  .lang-switch__link--active {
+    color: #FFFFFF;
+  }
+
+  .menu-toggle__line {
+    background-color: #FFFFFF;
+  }
+
+  /* Logo - Use white version in dark mode */
+  .logo__image {
+    filter: brightness(0) invert(1);
+  }
+
+  /* -------------------------------------------------------------------------
+     Hero Section
+     ------------------------------------------------------------------------- */
+  .hero__title {
+    color: #E2CA8C;
+  }
+
+  .hero__subtitle {
+    color: #FFFFFF;
+  }
+
+  .hero__overlay {
+    background: linear-gradient(
+      to right,
+      rgba(4, 23, 47, 0.8) 0%,
+      rgba(4, 23, 47, 0.6) 50%,
+      rgba(4, 23, 47, 0.4) 100%
+    );
+  }
+
+  /* -------------------------------------------------------------------------
+     About Section
+     ------------------------------------------------------------------------- */
+  .about__subtitle {
+    color: var(--color-text-muted);
+  }
+
+  .about__image {
+    background-color: var(--color-background-alt);
+  }
+
+  /* -------------------------------------------------------------------------
+     Buttons
+     ------------------------------------------------------------------------- */
+  .btn--primary {
+    background-color: var(--color-accent-primary);
+    color: var(--color-background);
+    border-color: var(--color-accent-primary);
+  }
+
+  .btn--primary:hover {
+    background-color: #E2CA8C;
+    border-color: #E2CA8C;
+  }
+
+  .btn--secondary {
+    border-color: var(--color-border);
+    color: #FFFFFF;
+  }
+
+  .btn--secondary:hover {
+    border-color: var(--color-accent-primary);
+    background-color: rgba(225, 168, 27, 0.1);
+  }
+
+  .btn--outline-light {
+    color: #FFFFFF;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .btn--outline-light:hover {
+    background-color: var(--color-accent-primary);
+    color: var(--color-background);
+    border-color: var(--color-accent-primary);
+  }
+
+  /* -------------------------------------------------------------------------
+     Cards & Components
+     ------------------------------------------------------------------------- */
   .service-card,
   .review-card {
     background: var(--color-background-alt);
@@ -1528,10 +1622,79 @@ small, .small, caption {
 
   .service-card:hover {
     border-color: var(--color-accent-primary);
-    background: #2a3c52;
+    background: rgba(37, 52, 73, 0.8);
   }
 
-  /* Form inputs - Dark background */
+  .principle-card__icon svg {
+    stroke: var(--color-accent-primary);
+  }
+
+  .about__point-icon svg {
+    stroke: var(--color-accent-primary);
+  }
+
+  /* -------------------------------------------------------------------------
+     Workflow
+     ------------------------------------------------------------------------- */
+  .workflow-step__number {
+    background: var(--color-background);
+    border-color: var(--color-border);
+    color: var(--color-accent-primary);
+  }
+
+  .workflow-step::after {
+    background-color: var(--color-border);
+  }
+
+  /* -------------------------------------------------------------------------
+     Gallery
+     ------------------------------------------------------------------------- */
+  .gallery__item::after {
+    background: rgba(4, 23, 47, 0);
+  }
+
+  .gallery__item:hover::after {
+    background: rgba(4, 23, 47, 0.3);
+  }
+
+  /* -------------------------------------------------------------------------
+     Format Cards
+     ------------------------------------------------------------------------- */
+  .format-card__overlay {
+    background: linear-gradient(
+      to top,
+      rgba(4, 23, 47, 0.95) 0%,
+      rgba(4, 23, 47, 0.5) 60%,
+      rgba(4, 23, 47, 0) 100%
+    );
+  }
+
+  .format-card__title {
+    color: #E2CA8C;
+  }
+
+  /* -------------------------------------------------------------------------
+     Reviews
+     ------------------------------------------------------------------------- */
+  .review-card__quote::before {
+    color: var(--color-accent-primary);
+  }
+
+  /* -------------------------------------------------------------------------
+     FAQ
+     ------------------------------------------------------------------------- */
+  .faq-item {
+    border-color: var(--color-border);
+  }
+
+  .faq-item__icon::before,
+  .faq-item__icon::after {
+    background-color: #FFFFFF;
+  }
+
+  /* -------------------------------------------------------------------------
+     Forms
+     ------------------------------------------------------------------------- */
   .form__input,
   .form__textarea {
     background-color: var(--color-background-alt);
@@ -1544,71 +1707,22 @@ small, .small, caption {
     color: var(--color-text-muted);
   }
 
-  /* Modal - Dark background */
-  .modal__content {
-    background-color: var(--color-background-alt);
-  }
-
-  /* Lightbox - Darker backdrop */
-  .lightbox {
-    background-color: rgba(4, 23, 47, 0.98);
-  }
-
-  /* Mobile menu - Dark background */
-  .mobile-menu {
-    background-color: var(--color-background);
-  }
-
-  /* Hero overlay - Adjusted for dark theme */
-  .hero__overlay {
-    background: linear-gradient(
-      to right,
-      rgba(4, 23, 47, 0.7) 0%,
-      rgba(4, 23, 47, 0.5) 50%,
-      rgba(4, 23, 47, 0.3) 100%
-    );
-  }
-
-  /* Gallery hover effect - Lighter overlay */
-  .gallery__item::after {
-    background: rgba(239, 238, 233, 0);
-  }
-
-  .gallery__item:hover::after {
-    background: rgba(239, 238, 233, 0.1);
-  }
-
-  /* Format cards overlay - Adjusted */
-  .format-card__overlay {
-    background: linear-gradient(
-      to top,
-      rgba(4, 23, 47, 0.9) 0%,
-      rgba(4, 23, 47, 0.3) 60%
-    );
-  }
-
-  /* Buttons - Adjusted for dark backgrounds */
-  .btn--secondary {
-    border-color: var(--color-border);
-  }
-
-  .btn--secondary:hover {
-    border-color: var(--color-accent-primary);
-    background-color: rgba(225, 168, 27, 0.1);
-  }
-
-  .btn--outline-light {
-    color: var(--color-text-primary);
-    border-color: var(--color-border);
-  }
-
-  .btn--outline-light:hover {
-    background-color: var(--color-accent-primary);
-    color: var(--color-background);
+  .form__input:focus,
+  .form__textarea:focus {
     border-color: var(--color-accent-primary);
   }
 
-  /* Contact social links - Dark mode */
+  .form__label {
+    color: var(--color-text-light);
+  }
+
+  /* -------------------------------------------------------------------------
+     Contact Section
+     ------------------------------------------------------------------------- */
+  .contact__detail-icon svg {
+    stroke: var(--color-accent-primary);
+  }
+
   .contact__social-link {
     border-color: var(--color-border);
   }
@@ -1619,31 +1733,78 @@ small, .small, caption {
 
   .contact__social-link:hover {
     background-color: var(--color-accent-primary);
+    border-color: var(--color-accent-primary);
   }
 
   .contact__social-link:hover svg {
     stroke: var(--color-background);
   }
 
-  /* Menu toggle - Light lines on dark header */
-  .menu-toggle__line {
-    background-color: var(--color-text-primary);
+  /* -------------------------------------------------------------------------
+     Footer
+     ------------------------------------------------------------------------- */
+  .footer {
+    background-color: #253449;
+    border-top: 1px solid var(--color-border);
   }
 
-  /* FAQ item icon - Light on dark */
-  .faq-item__icon::before,
-  .faq-item__icon::after {
-    background-color: var(--color-text-primary);
+  .footer__top {
+    border-bottom-color: rgba(142, 168, 203, 0.2);
   }
 
-  /* Workflow step background - Ensure visibility */
-  .workflow-step__number {
-    background: var(--color-background);
-    border-color: var(--color-border);
+  /* -------------------------------------------------------------------------
+     Modal & Lightbox
+     ------------------------------------------------------------------------- */
+  .modal__content {
+    background-color: var(--color-background-alt);
   }
 
-  /* About image placeholder - Darker in dark mode */
-  .about__image {
+  .modal__close {
+    color: var(--color-text-muted);
+  }
+
+  .modal__close:hover {
+    color: var(--color-accent-primary);
+  }
+
+  .lightbox {
+    background-color: rgba(4, 23, 47, 0.98);
+  }
+
+  .lightbox__close {
+    color: #FFFFFF;
+  }
+
+  /* -------------------------------------------------------------------------
+     Mobile Menu
+     ------------------------------------------------------------------------- */
+  .mobile-menu {
+    background-color: var(--color-background);
+  }
+
+  .mobile-menu__close {
+    color: #FFFFFF;
+  }
+
+  /* -------------------------------------------------------------------------
+     Section Headers
+     ------------------------------------------------------------------------- */
+  .section-header__subtitle {
+    color: var(--color-text-muted);
+  }
+
+  .section-header__description {
+    color: var(--color-text-light);
+  }
+
+  /* -------------------------------------------------------------------------
+     Zero Blocks
+     ------------------------------------------------------------------------- */
+  .zero-block--alt {
+    background-color: var(--color-background-warm);
+  }
+
+  .zero-block--cream {
     background-color: var(--color-background-alt);
   }
 }
