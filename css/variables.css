@@ -23,8 +23,9 @@
      Typography
      ------------------------------------------------------------------------- */
   /* Font Families */
-  --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Prata', serif;
+  --font-body: 'Libre Franklin', sans-serif;
+  --font-ui: 'Montserrat', sans-serif;
 
   /* Font Sizes - Desktop */
   --text-xs: 0.75rem;      /* 12px */
