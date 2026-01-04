@@ -1503,3 +1503,147 @@ small, .small, caption {
 .no-scroll {
   overflow: hidden;
 }
+
+/* ==========================================================================
+   Dark Mode Specific Adjustments
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+  /* Header - Dark scrolled state */
+  .header--scrolled {
+    background-color: rgba(4, 23, 47, 0.95);
+  }
+
+  /* Footer - Lighter in dark mode */
+  .footer {
+    background-color: #253449;
+    border-top: 1px solid var(--color-border);
+  }
+
+  /* Service & Review Cards - Dark background with border */
+  .service-card,
+  .review-card {
+    background: var(--color-background-alt);
+    border-color: var(--color-border);
+  }
+
+  .service-card:hover {
+    border-color: var(--color-accent-primary);
+    background: #2a3c52;
+  }
+
+  /* Form inputs - Dark background */
+  .form__input,
+  .form__textarea {
+    background-color: var(--color-background-alt);
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+  }
+
+  .form__input::placeholder,
+  .form__textarea::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  /* Modal - Dark background */
+  .modal__content {
+    background-color: var(--color-background-alt);
+  }
+
+  /* Lightbox - Darker backdrop */
+  .lightbox {
+    background-color: rgba(4, 23, 47, 0.98);
+  }
+
+  /* Mobile menu - Dark background */
+  .mobile-menu {
+    background-color: var(--color-background);
+  }
+
+  /* Hero overlay - Adjusted for dark theme */
+  .hero__overlay {
+    background: linear-gradient(
+      to right,
+      rgba(4, 23, 47, 0.7) 0%,
+      rgba(4, 23, 47, 0.5) 50%,
+      rgba(4, 23, 47, 0.3) 100%
+    );
+  }
+
+  /* Gallery hover effect - Lighter overlay */
+  .gallery__item::after {
+    background: rgba(239, 238, 233, 0);
+  }
+
+  .gallery__item:hover::after {
+    background: rgba(239, 238, 233, 0.1);
+  }
+
+  /* Format cards overlay - Adjusted */
+  .format-card__overlay {
+    background: linear-gradient(
+      to top,
+      rgba(4, 23, 47, 0.9) 0%,
+      rgba(4, 23, 47, 0.3) 60%
+    );
+  }
+
+  /* Buttons - Adjusted for dark backgrounds */
+  .btn--secondary {
+    border-color: var(--color-border);
+  }
+
+  .btn--secondary:hover {
+    border-color: var(--color-accent-primary);
+    background-color: rgba(225, 168, 27, 0.1);
+  }
+
+  .btn--outline-light {
+    color: var(--color-text-primary);
+    border-color: var(--color-border);
+  }
+
+  .btn--outline-light:hover {
+    background-color: var(--color-accent-primary);
+    color: var(--color-background);
+    border-color: var(--color-accent-primary);
+  }
+
+  /* Contact social links - Dark mode */
+  .contact__social-link {
+    border-color: var(--color-border);
+  }
+
+  .contact__social-link svg {
+    stroke: var(--color-text-primary);
+  }
+
+  .contact__social-link:hover {
+    background-color: var(--color-accent-primary);
+  }
+
+  .contact__social-link:hover svg {
+    stroke: var(--color-background);
+  }
+
+  /* Menu toggle - Light lines on dark header */
+  .menu-toggle__line {
+    background-color: var(--color-text-primary);
+  }
+
+  /* FAQ item icon - Light on dark */
+  .faq-item__icon::before,
+  .faq-item__icon::after {
+    background-color: var(--color-text-primary);
+  }
+
+  /* Workflow step background - Ensure visibility */
+  .workflow-step__number {
+    background: var(--color-background);
+    border-color: var(--color-border);
+  }
+
+  /* About image placeholder - Darker in dark mode */
+  .about__image {
+    background-color: var(--color-background-alt);
+  }
+}
