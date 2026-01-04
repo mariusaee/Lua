@@ -26,7 +26,17 @@ LUA Wedding Agency landing page - a static, bilingual (Russian/English) wedding 
 ├── js/
 │   └── main.js           # All interactive functionality
 ├── assets/
-│   └── favicon.svg       # Site favicon
+│   ├── favicon.ico           # Site favicon (32x32)
+│   ├── favicon-16x16.png     # Small favicon
+│   ├── favicon-32x32.png     # Standard favicon
+│   ├── apple-touch-icon.png  # iOS home screen icon (180x180)
+│   └── logos/
+│       ├── logo-white.png           # White logo with text
+│       ├── logo-white-icon.png      # White logo icon only
+│       ├── logo-light-blue.png      # Light blue logo with text
+│       ├── logo-light-blue-icon.png # Light blue logo icon only
+│       ├── logo-dark-blue.png       # Dark blue logo with text
+│       └── logo-dark-blue-icon.png  # Dark blue logo icon only
 └── .github/workflows/
     ├── deploy.yml        # GitHub Pages deployment
     └── static.yml        # Static content deployment
@@ -220,3 +230,4 @@ Add `.faq-item` structure in FAQ section. The accordion JavaScript automatically
 - Images are currently placeholders (design stage)
 - Contact form needs backend integration for production
 - Social media links in footer are placeholder (`href="#"`)
+- делай коммит по завершении задачи, что бы мой сайт обновился и я увидел результат
