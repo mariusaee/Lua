@@ -354,10 +354,6 @@ small, .small, caption {
   display: block;
 }
 
-.header--scrolled .logo__image {
-  filter: brightness(0) saturate(100%) invert(17%) sepia(8%) saturate(635%) hue-rotate(354deg) brightness(96%) contrast(90%);
-}
-
 .footer__logo img {
   height: 60px;
   width: auto;
@@ -381,12 +377,12 @@ small, .small, caption {
   font-size: var(--text-sm);
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide);
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-light);
   transition: color var(--transition-base);
 }
 
 .nav__link:hover {
-  color: var(--color-background);
+  color: var(--color-text-heading);
 }
 
 .header--scrolled .nav__link {
@@ -405,12 +401,12 @@ small, .small, caption {
 }
 
 .lang-switch__link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-muted);
   padding: var(--space-1) var(--space-2);
 }
 
 .lang-switch__link--active {
-  color: var(--color-background);
+  color: var(--color-text-heading);
 }
 
 .header--scrolled .lang-switch__link {
@@ -432,12 +428,8 @@ small, .small, caption {
 .menu-toggle__line {
   width: 24px;
   height: 2px;
-  background-color: var(--color-background);
-  transition: all var(--transition-base);
-}
-
-.header--scrolled .menu-toggle__line {
   background-color: var(--color-text-heading);
+  transition: all var(--transition-base);
 }
 
 /* ==========================================================================
@@ -490,13 +482,13 @@ small, .small, caption {
 }
 
 .hero__title {
-  color: var(--color-background);
+  color: var(--color-deep-navy);
   margin-bottom: var(--space-6);
   font-size: var(--text-6xl);
 }
 
 .hero__subtitle {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-navy);
   font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
   margin-bottom: var(--space-10);
