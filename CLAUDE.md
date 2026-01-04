@@ -50,21 +50,102 @@ LUA Wedding Agency landing page - a static, bilingual (Russian/English) wedding 
 
 ## Design System
 
-### CSS Variables (`css/variables.css`)
+### Typography
 
-The design system uses CSS custom properties organized by category:
+**Three-font system** from `font-instructions.md`:
 
-- **Colors**: Neutral palette with cream/warm tones (`--color-background-cream`, `--color-accent`)
-- **Typography**: Serif headings (`Cormorant Garamond`) + sans-serif body (`Inter`)
+1. **Prata** (serif) - Headings and accents
+   - Elegant display font supporting Latin + Cyrillic
+   - Used for H1, H2, and brand identity elements
+   - Creates premium, Vogue-inspired aesthetic
+
+2. **Montserrat** (sans-serif) - UI elements and labels
+   - Neutral, clean font for navigation, buttons, captions
+   - Supports Latin + Cyrillic
+   - Used for H3-H6 (contextual), nav, buttons
+
+3. **Libre Franklin** (sans-serif) - Body text
+   - Optimized for long-form content readability
+   - Used for paragraphs, descriptions, articles
+
+**Typography rules**:
+- Never use pure black (`#000000`) for text
+- Use dark navy, brown, or burgundy from color palette instead
+- White text on dark backgrounds for maximum contrast
+- For text over images: use black overlay with 50-60% opacity
+
+**Font loading** (Google Fonts):
+```html
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Montserrat:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+```
+
+**CSS variables**:
+```css
+--font-heading: 'Prata', serif;
+--font-body: 'Libre Franklin', sans-serif;
+--font-ui: 'Montserrat', sans-serif;
+```
+
+### Color Palette
+
+**LUA color system** from `color-palette-instructions.md`:
+
+**Warm Tones (Gold/Brown)** - для уюта и премиальности:
+- Cream `#EFEEE9` - Backgrounds, light sections
+- Sand `#E2CA8C` - Accent blocks, hover effects
+- Gold `#E1A81B` - CTA buttons, key accents
+- Bronze `#935F10` - Subheadings, icons
+- Brown `#593C0F` - Dark text on light backgrounds
+
+**Cool Tones (Blues)** - основная структура и текст:
+- Ice Blue `#C9DCED` - Light backgrounds, dividers
+- Sky Blue `#8EA8CB` - Secondary elements, link hovers
+- Steel Blue `#536C95` - Icons, captions
+- Navy `#253449` - Primary text (replaces black)
+- Deep Navy `#04172F` - Headings, dark accents
+
+**Accent Tones (Pink/Burgundy)** - акценты и контраст:
+- Pearl `#F8F3F0` - Alternative light background
+- Blush `#FAE8E9` - Soft highlights, cards
+- Burgundy `#921C38` - Primary accent, CTA
+- Wine `#7B1830` - Burgundy hover, links
+- Dark Wine `#551624` - Dark text on light accents
+
+**Color usage rules**:
+- ❌ Never use pure black `#000000` for text
+- ✅ Primary text: Navy `#253449`
+- ✅ Headings: Deep Navy `#04172F` or Dark Wine `#551624`
+- ✅ CTA buttons: Burgundy `#921C38` or Gold `#E1A81B`
+- ✅ Backgrounds: White, Cream `#EFEEE9`, Pearl `#F8F3F0`
+- ❌ Don't mix Burgundy + Gold without neutral separator
+- Limit to 3-4 colors per screen
+
+**Accessibility**: All primary combinations meet WCAG AAA standards
+- Navy on White: 12.5:1
+- Burgundy on White: 8.2:1
+- White on Deep Navy: 15.3:1
+
+**CSS variables** (semantic):
+```css
+--color-text-primary: var(--color-navy);
+--color-text-heading: var(--color-deep-navy);
+--color-text-light: var(--color-pearl);
+--color-background: #FFFFFF;
+--color-background-alt: var(--color-cream);
+--color-accent-primary: var(--color-burgundy);
+--color-accent-secondary: var(--color-gold);
+--color-link: var(--color-steel-blue);
+--color-link-hover: var(--color-navy);
+```
+
+### Layout & Spacing
+
+The design system uses CSS custom properties in `css/variables.css`:
+
 - **Spacing**: Consistent scale from `--space-1` (4px) to `--space-40` (160px)
 - **Responsive**: Mobile overrides at 768px breakpoint
-
-### Key Design Tokens
-
-- Container max-width: `1200px`
-- Section spacing: `160px` (desktop) / `80px` (mobile)
-- Primary font: `Inter` for body, `Cormorant Garamond` for headings
-- Color scheme: Dark text on cream/white backgrounds
+- **Container max-width**: `1200px`
+- **Section spacing**: `160px` (desktop) / `80px` (mobile)
 
 ## Site Architecture
 
