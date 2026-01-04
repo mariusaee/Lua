@@ -4,20 +4,45 @@
 
 :root {
   /* -------------------------------------------------------------------------
-     Colors
+     Colors - LUA Palette
      ------------------------------------------------------------------------- */
-  --color-primary: #2C2C2C;
-  --color-text: #3D3D3D;
-  --color-text-light: #6B6B6B;
-  --color-text-muted: #9A9A9A;
+
+  /* Warm Tones (Gold / Brown) */
+  --color-cream: #EFEEE9;
+  --color-sand: #E2CA8C;
+  --color-gold: #E1A81B;
+  --color-bronze: #935F10;
+  --color-brown: #593C0F;
+
+  /* Cool Tones (Blues) */
+  --color-ice-blue: #C9DCED;
+  --color-sky-blue: #8EA8CB;
+  --color-steel-blue: #536C95;
+  --color-navy: #253449;
+  --color-deep-navy: #04172F;
+
+  /* Accent Tones (Pink / Burgundy) */
+  --color-pearl: #F8F3F0;
+  --color-blush: #FAE8E9;
+  --color-burgundy: #921C38;
+  --color-wine: #7B1830;
+  --color-dark-wine: #551624;
+
+  /* Semantic Variables */
+  --color-text-primary: var(--color-navy);
+  --color-text-heading: var(--color-deep-navy);
+  --color-text-light: var(--color-pearl);
+  --color-text-muted: var(--color-steel-blue);
   --color-background: #FFFFFF;
-  --color-background-warm: #FAF9F7;
-  --color-background-cream: #F5F3EF;
-  --color-border: #E8E6E3;
-  --color-border-light: #F0EEEB;
-  --color-accent: #8B7355;
-  --color-accent-light: #B5A48C;
-  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-background-alt: var(--color-cream);
+  --color-background-warm: var(--color-pearl);
+  --color-accent-primary: var(--color-burgundy);
+  --color-accent-secondary: var(--color-gold);
+  --color-link: var(--color-steel-blue);
+  --color-link-hover: var(--color-navy);
+  --color-border: var(--color-ice-blue);
+  --color-border-light: var(--color-pearl);
+  --color-overlay: rgba(4, 23, 47, 0.5);
 
   /* -------------------------------------------------------------------------
      Typography
@@ -117,9 +142,9 @@
   /* -------------------------------------------------------------------------
      Shadows
      ------------------------------------------------------------------------- */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 1px 2px rgba(4, 23, 47, 0.04);
+  --shadow-md: 0 4px 12px rgba(4, 23, 47, 0.06);
+  --shadow-lg: 0 8px 24px rgba(4, 23, 47, 0.08);
 
   /* -------------------------------------------------------------------------
      Transitions
