@@ -329,16 +329,26 @@ p:last-child {
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: var(--text-xl);
-  font-weight: var(--font-light);
-  letter-spacing: var(--tracking-wider);
-  color: var(--color-background);
-  transition: color var(--transition-base);
+  display: block;
+  transition: opacity var(--transition-base);
 }
 
-.header--scrolled .logo {
-  color: var(--color-primary);
+.logo__image {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.header--scrolled .logo__image {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(8%) saturate(635%) hue-rotate(354deg) brightness(96%) contrast(90%);
+}
+
+.footer__logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .nav {
