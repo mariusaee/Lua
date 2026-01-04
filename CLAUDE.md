@@ -30,6 +30,12 @@ LUA Wedding Agency landing page - a static, bilingual (Russian/English) wedding 
 │   ├── favicon-16x16.png     # Small favicon
 │   ├── favicon-32x32.png     # Standard favicon
 │   ├── apple-touch-icon.png  # iOS home screen icon (180x180)
+│   ├── fonts/
+│   │   ├── Libre_Franklin/   # Variable & static fonts (Light, Regular, Medium, Bold, etc.)
+│   │   ├── Montserrat/       # Variable & static fonts (Light, Regular, Medium, Bold, etc.)
+│   │   ├── Mrs_Saint_Delafield/  # Decorative script font
+│   │   ├── Prata/            # Serif display font
+│   │   └── Georgian/         # BPG Nino Mtavruli font
 │   └── logos/
 │       ├── logo-white.png           # White logo with text
 │       ├── logo-white-icon.png      # White logo icon only
